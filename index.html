@@ -1,0 +1,66 @@
+<html>
+<head>
+  <title>Javascript-ing to the Max - Home</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="libs/fontawesome/css/all.min.css">
+</head>
+<body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+
+<nav>
+  <ul id="nav">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="stocks.html">Stocks</a></li>
+    <li><a href="dogs.html">Dogs</a></li>
+  </ul>
+</nav>
+
+<main>
+  <h1>INST 327 Home</h1>
+  <blockquote id="quote">
+    <h2>Quote of the page</h2>
+    <p id="quote-text">Loading inspiration…</p>
+    <footer id="quote-author"></footer>
+  </blockquote>
+
+  <div class="button-row">
+    <div class="action-buttons">
+      <a href="stocks.html" class="cool-btn stocks-btn">
+        <i class="fas fa-chart-line"></i>
+        Stocks
+      </a>
+      <a href="dogs.html" class="cool-btn dogs-btn">
+        <i class="fas fa-dog"></i>
+        Dogs
+      </a>
+    </div>
+  </div>
+</main>
+
+<div id="audio-box">
+  <h1>In this web page there are options to Navigate using Audio</h1>
+  <h2>Ensure your mic is enabled to use this feature</h2>
+  <ul>
+    <li>You can say “Hello”.</li>
+    <li>You can say “Change the color”.</li>
+    <li>You can say “Open stocks”.</li>
+    <li>You can say “Go to stocks”.</li>
+    <li>You can say “Open dogs”.</li>
+    <li>You can say “Go to dogs”.</li>
+  </ul>
+  <div class="mic-buttons">
+    <button id="audio-on" class="mic-btn mic-btn--on">
+      <i class="fas fa-microphone"></i> Mic On
+    </button>
+    <button id="audio-off" class="mic-btn mic-btn--off">
+      <i class="fas fa-microphone-slash"></i> Mic Off
+    </button>
+  </div>
+</div>
+
+<script type="module" src="js/shared.js"></script>
+<script type="module" src="js/home.js"></script>
+
+</body>
+</html>
