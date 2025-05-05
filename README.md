@@ -2,6 +2,6 @@
 
 # INST377-Lab
 
-# Name Ian Grzebien:
+# Name: Ian Grzebien
 
 # Comments:
