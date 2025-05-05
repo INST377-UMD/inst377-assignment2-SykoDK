@@ -1,0 +1,62 @@
+<html>
+<head>
+  <title>Javascript-ing to the Max - Dogs</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="libs/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/simpleslider-js@1.9.0/dist/simpleSlider.min.css">
+</head>
+<body>
+
+<nav>
+  <ul id="nav">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="stocks.html">Stocks</a></li>
+    <li><a href="dogs.html">Dogs</a></li>
+  </ul>
+</nav>
+
+<main>
+  <h1>Dog Breed Explorer</h1>
+
+  <div id="dog-carousel" class="simple-slider">
+    <div class="slider-wrapper"></div>
+  </div>
+
+  <section id="breed-section">
+    <h2>Choose a breed</h2>
+    <div id="breeds-container" class="breeds"></div>
+  </section>
+
+  <aside id="infoBox" hidden></aside>
+
+  <div id="audio-box">
+    <h1>In this web page there are options to Navigate using Audio</h1>
+    <h2>Ensure your mic is enabled to use this feature</h2>
+    <ul>
+      <li>You can say “load dog breed **dog breed listed above**”.</li>
+      <li>You can say “open home”.</li>
+      <li>You can say “go home”.</li>
+      <li>You can say “open stocks”.</li>
+      <li>You can say “go to stocks”.</li>
+      <li>You can say “hello”.</li>
+    </ul>
+    <div class="button-row">
+      <div class="mic-buttons">
+        <button id="audio-on" class="mic-btn mic-btn--on">
+          <i class="fas fa-microphone"></i> Mic On
+        </button>
+        <button id="audio-off" class="mic-btn mic-btn--off">
+          <i class="fas fa-microphone-slash"></i> Mic Off
+        </button>
+      </div>
+    </div>
+  </div>
+</main>
+
+<script src="https://unpkg.com/simpleslider-js@1.9.0/dist/simpleSlider.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+<script type="module" src="js/shared.js"></script>
+<script type="module" src="js/dogs.js"></script>
+
+</body>
+</html>
